@@ -1,0 +1,159 @@
+ /* Banner Section */
+ .banner {
+  background: linear-gradient(#22305800 0%, #1B243F 80%, #1A244033 20%),
+              url("/assets/images/banner_hero.png") no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.banner-content {
+  max-width: 706px;
+  max-height: 744px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.banner-content button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 241px;
+  height: 56px;
+  color: #fff;
+}
+
+.curved-text {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -150px;
+}
+
+/* Style for each letter in the circular text */
+.curved-text span {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  transform-origin: 80px 80px;
+  /* Center of the circle */
+}
+
+/* Rotate each letter around the circle, starting from 210 degrees */
+.curved-text span:nth-child(1) {
+  transform: rotate(210deg) translateX(80px);
+}
+
+.curved-text span:nth-child(2) {
+  transform: rotate(225deg) translateX(80px);
+}
+
+.curved-text span:nth-child(3) {
+  transform: rotate(240deg) translateX(80px);
+}
+
+.curved-text span:nth-child(4) {
+  transform: rotate(255deg) translateX(80px);
+}
+
+.curved-text span:nth-child(5) {
+  transform: rotate(270deg) translateX(80px);
+}
+
+.curved-text span:nth-child(6) {
+  transform: rotate(285deg) translateX(80px);
+}
+
+.curved-text span:nth-child(7) {
+  transform: rotate(300deg) translateX(80px);
+}
+
+.curved-text span:nth-child(8) {
+  transform: rotate(315deg) translateX(80px);
+}
+
+.curved-text span:nth-child(9) {
+  transform: rotate(330deg) translateX(80px);
+}
+
+.curved-text span:nth-child(10) {
+  transform: rotate(345deg) translateX(80px);
+}
+
+.curved-text span:nth-child(11) {
+  transform: rotate(0deg) translateX(80px);
+}
+
+.curved-text span:nth-child(12) {
+  transform: rotate(15deg) translateX(80px);
+}
+
+.curved-text span:nth-child(13) {
+  transform: rotate(30deg) translateX(80px);
+}
+
+.curved-text span:nth-child(14) {
+  transform: rotate(45deg) translateX(80px);
+}
+
+.curved-text span:nth-child(15) {
+  transform: rotate(60deg) translateX(80px);
+}
+
+.curved-text span:nth-child(16) {
+  transform: rotate(75deg) translateX(80px);
+}
+
+.curved-text span:nth-child(17) {
+  transform: rotate(90deg) translateX(80px);
+}
+
+.curved-text span:nth-child(18) {
+  transform: rotate(105deg) translateX(80px);
+}
+
+.curved-text span:nth-child(19) {
+  transform: rotate(120deg) translateX(80px);
+}
+
+.curved-text span:nth-child(20) {
+  transform: rotate(135deg) translateX(80px);
+}
+
+.curved-text span:nth-child(21) {
+  transform: rotate(150deg) translateX(80px);
+}
+
+.curved-text span:nth-child(22) {
+  transform: rotate(165deg) translateX(80px);
+}
+
+.curved-text span:nth-child(23) {
+  transform: rotate(180deg) translateX(80px);
+}
+
+.curved-text span:nth-child(24) {
+  transform: rotate(195deg) translateX(80px);
+}
+
+/* Center arrow styling */
+.arrow {
+  position: absolute;
+  top: 95%;
+  /* Center vertically */
+  left: 98%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Align the center */
+}

@@ -1,0 +1,4 @@
+/* Navbar */
+.btn-enquire { background-color: #0EA57A; color: white; border: none; }
+.btn-enquire:hover { background-color: #087f5b; }
+.navbar { background-color: #3E517F; position: absolute; width: 100%; top: 0; left: 0; z-index: 1000; }
