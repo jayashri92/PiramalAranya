@@ -1,18 +1,80 @@
-<div class="container-fluid">
-  <div class="row">
-    <!-- --------------------navbar start------------------- -->
-    <div class="col-md-12">
-      <app-navbar></app-navbar>
-    </div>
-    <!-- --------------------navbar end--------------------->
-    <!-- --------------------banner start--------------------->
-    <div class="row">
-      <div class="col-md-12">
-        <app-banner></app-banner>
-      </div>
-    </div>
-    <!-- --------------------banner end--------------------->
-  </div>
-</div>
+<!-- <app-navbar (changeComponent)="setComponent($event)"></app-navbar>
+<app-enquiry *ngIf="currentComponent === 'enquireNow'"></app-enquiry> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-banner *ngIf="currentComponent === 'banner'"></app-banner>
+<app-project-confuguration *ngIf="currentComponent === 'projectConfiguration'"></app-project-confuguration>
+<app-overview *ngIf="currentComponent === 'overview'"></app-overview>
+<app-counter *ngIf="currentComponent === 'counter'"></app-counter>
+<app-amenities *ngIf="currentComponent === 'amenities'"></app-amenities>
+<app-surroundings *ngIf="currentComponent === 'surroundings'"></app-surroundings>
+<app-neighbourhood *ngIf="currentComponent === 'contact'"></app-neighbourhood>
+<app-footer *ngIf="currentComponent === 'footer'"></app-footer> -->
 
-<router-outlet></router-outlet>
+<!-- <section id="banner">
+  <app-banner></app-banner>
+</section>
+
+<section id="projectConfiguration">
+  <app-project-confuguration></app-project-confuguration>
+</section>
+
+<section id="overview">
+  <app-overview></app-overview>
+</section>
+
+<section id="counter">
+  <app-counter></app-counter>
+</section>
+
+<section id="amenities">
+  <app-amenities></app-amenities>
+</section>
+
+<section id="surroundings">
+  <app-surroundings></app-surroundings>
+</section>
+
+<section id="contact">
+  <app-neighbourhood></app-neighbourhood>
+</section>
+
+<app-footer></app-footer> -->
+
+
+<app-navbar (changeComponent)="setComponent($event)"></app-navbar>
+
+<!-- Show Only the Enquiry Component When Clicked -->
+<app-enquiry *ngIf="currentComponent === 'enquireNow'" (closeEnquiry)="setComponent('banner')"></app-enquiry>
+
+<!-- Show Other Sections When Not Viewing Enquiry -->
+<div *ngIf="currentComponent !== 'enquireNow'">
+  <section id="banner">
+    <app-banner></app-banner>
+  </section>
+
+  <section id="projectConfiguration">
+    <app-project-confuguration></app-project-confuguration>
+  </section>
+
+  <section id="overview">
+    <app-overview></app-overview>
+  </section>
+
+  <section id="counter">
+    <app-counter></app-counter>
+  </section>
+
+  <section id="amenities">
+    <app-amenities></app-amenities>
+  </section>
+
+  <section id="surroundings">
+    <app-surroundings></app-surroundings>
+  </section>
+
+  <section id="contact">
+    <app-neighbourhood></app-neighbourhood>
+  </section>
+
+  <app-footer></app-footer>
+</div>

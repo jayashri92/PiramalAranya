@@ -1,0 +1,192 @@
+/* -----Premium Amenities Start---- */
+.premium_amneties {
+  background-color: #fff;
+  width: 100%;
+}
+
+.premium_amneties_headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.premium_amneties_headings > p {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00E5A1;
+  margin-bottom: 5px;
+}
+
+.premium_amneties_headings > h3 {
+  font-family: "Gabriela", serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 63px;
+  color: #000;
+  margin-top: 0;
+}
+
+.amenities {
+  background-color: #fff;
+  width: 100%;
+}
+
+.amenities_icon_bg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #EBFAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amneties_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.amneties_content > h5 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.amneties_content > p {
+  font-family: "Poppins", serif;
+  font-size: 10px;
+  line-height: 10.5px;
+}
+
+.gym_img {
+  height: 696px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ------ Amenities ------ */
+.facilities {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid #A5A5A5;
+  padding-left: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.facilities h5 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.amenities_1 {
+  width: 200px;
+  height: 200px;
+}
+
+.amenities_text {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17.8px;
+  text-align: justify;
+  width: 100%;
+}
+
+.amenities_sr_nu {
+  font-family: "Poppins", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #00E5A1;
+  margin-bottom: 10px;
+}
+
+.facilities_alt {
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .premium_amneties_headings {
+    gap: 15px;
+  }
+  .premium_amneties_headings > h3 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .gym_img {
+    height: 500px;
+  }
+  .facilities {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .premium_amneties_headings {
+    gap: 10px;
+  }
+  .premium_amneties_headings > h3 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .amneties_content > h5 {
+    font-size: 18px;
+  }
+  .facilities {
+    border-left: none;
+    padding-left: 8px;
+  }
+  .facilities_alt {
+    margin-top: 30px;
+  }
+  .amenities_text {
+    width: 100%;
+  }
+  .amenities_1 {
+    width: 100%;
+    height: auto;
+  }
+  .amenities_sr_nu {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .premium_amneties_headings {
+    gap: 5px;
+  }
+  .premium_amneties_headings > h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .amenities_icon_bg {
+    width: 50px;
+    height: 50px;
+  }
+  .amneties_content > h5 {
+    font-size: 16px;
+  }
+  .gym_img {
+    height: 300px;
+  }
+  .facilities {
+    border-left: none;
+    padding-left: 5px;
+    text-align: center;
+    align-items: center;
+  }
+  .facilities_alt {
+    margin-top: 20px;
+  }
+  .amenities_sr_nu {
+    font-size: 18px;
+  }
+}

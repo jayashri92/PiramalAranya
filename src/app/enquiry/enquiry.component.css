@@ -1,0 +1,35 @@
+.input_container{
+  position: relative;
+  width: 100%;
+}
+.input_container input{
+  position: relative;
+  background-color: #EDEDEE;
+}
+
+.input_container i{
+  position: absolute;
+  top: 43px;
+  right: 8px;
+}
+
+.sub-btn{
+  background-color: #1A2440;
+}
+.logo_black{
+  width: 184px;
+  height: 64px;
+}
+.disclamer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.disclamer p span{
+  font-weight: 600;
+}
+
+.btn-backToHome{
+  background-color:#1A2440;
+  color: #fff;
+}

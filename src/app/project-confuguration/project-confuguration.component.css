@@ -1,0 +1,113 @@
+/* Configuration Section */
+.configuration {
+  background-color: #1A2440;
+  padding: 5%;
+}
+
+.configuration-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Search Your Configuration */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container .form-group {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 335px;
+}
+
+.filter-container .form-group select,
+.filter-container .form-group input {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.input-placeholder::placeholder {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.form-select {
+  text-align: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0EA57A;
+  background-color: #EBFAFF;
+  padding: 7px 9px;
+  border-radius: 3px;
+}
+
+.filter-btn {
+  background-color: #0EA57A;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 81px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-container .form-group {
+    width: 80%;
+  }
+  .filter-btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .configuration-text {
+    font-size: 20px;
+  }
+  .filter-container {
+    padding: 15px;
+  }
+  .filter-container .form-group {
+    width: 90%;
+  }
+  .filter-btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .configuration-text {
+    font-size: 18px;
+  }
+  .filter-container {
+    padding: 10px;
+  }
+  .filter-container .form-group {
+    width: 100%;
+  }
+  .filter-btn {
+    width: 100%;
+  }
+}

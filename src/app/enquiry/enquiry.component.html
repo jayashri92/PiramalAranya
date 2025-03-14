@@ -1,0 +1,110 @@
+<!-- <div class="container pt-5">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/images/logo_black.png" class="logo_black" alt=""></a>
+    </div>
+  </nav>
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h5 class="float-end text-danger">+91-8197883993</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mt-5">
+      <img src="/assets/images/book_site_tour/book site tour.png" alt="">
+    </div>
+    <div class="book_site_tour col-md-6 mt-5">
+      <h5 class="text-danger mt-5 float-end">+91-8197883993</h5>
+      <button type="button" class="btn-close float-end" aria-label="Close"></button>
+      <div>
+        <form class="py-5" [formGroup]="enquiryForm" (ngSubmit)="submitEnquiryData()">
+          <div class="mb-3">
+            <h2 class="text-center">Book Site Tour</h2>
+          </div>
+          <div class="input_container mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" formControlName="name">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="input_container mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="input_container mb-3">
+            <label for="mobilNumber" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobilNumber" formControlName="mobileNumber">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="mt-5">
+            <button type="submit" class="btn btn-primary w-100 sub-btn">Book Now</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4 offset-4 d-flex justify-content-center align-item-center flex-column gap-3">
+        <h2>Thanks for Registering</h2>
+        <p>Our experts will get in touch with you shortly</p>
+        <button class="btn btn-backToHome">Back To Homepage</button>
+      </div>
+    </div>
+  </div>
+  <div class="row py-5">
+    <div class="disclamer col-12">
+      <h5>Disclamer</h5>
+      <p>This is not the official website of developer, it belongs to the authorised channel partner for
+        information & marketing purposes only. All rights for logo & images are reserved by the developer.
+      </p>
+      <p>Digital Media planned by <span class="text-bold">Propacity</span></p>
+    </div>
+  </div>
+</div> -->
+
+<div class="container pt-5">
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h5 class="float-end text-danger">+91-8197883993</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mt-5">
+      <img src="/assets/images/book_site_tour/book site tour.png" alt="">
+    </div>
+
+    <div class="book_site_tour col-md-6 mt-5">
+      <!-- Close Button -->
+      <button type="button" class="btn-close float-end" (click)="closeForm()" aria-label="Close"></button>
+
+      <!-- Show Form -->
+      <div *ngIf="!isSubmitted">
+        <form class="py-5" [formGroup]="enquiryForm" (ngSubmit)="submitEnquiryData()">
+          <div class="mb-3">
+            <h2 class="text-center">Book Site Tour</h2>
+          </div>
+          <div class="input_container mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" formControlName="name">
+          </div>
+          <div class="input_container mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+          <div class="input_container mb-3">
+            <label for="mobilNumber" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobilNumber" formControlName="mobileNumber">
+          </div>
+          <div class="mt-5">
+            <button type="submit" class="btn btn-primary w-100">Book Now</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Show Success Message After Submission -->
+      <div *ngIf="isSubmitted" class="text-center">
+        <h2>Thanks for Registering</h2>
+        <p>Our experts will get in touch with you shortly</p>
+        <button class="btn btn-primary" (click)="closeForm()">Back to Homepage</button>
+      </div>
+    </div>
+  </div>
+</div>

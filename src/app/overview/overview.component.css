@@ -1,0 +1,86 @@
+.overview {
+  background-color: #1A2440;
+}
+
+.text-aqua {
+  color: #00E5A1;
+}
+
+.apartment-img {
+  width: 80%;
+}
+
+.apartment_text {
+  font-family: "Poppins", serif;
+  color: #E3E3E3;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify; /* Added text alignment */
+}
+
+h3 {
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: -2.5%;
+  color: #fff;
+}
+
+hr {
+  height: 2px;
+  background-color: #A5A5A5;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  h3 {
+    font-size: 48px; /* Reduce heading size */
+  }
+  .apartment_text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+  }
+  .apartment-img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 36px;
+  }
+  .apartment_text {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  .apartment-img {
+    width: 100%;
+  }
+  .overview .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 28px;
+  }
+  .apartment_text {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+  }
+  .apartment-img {
+    width: 100%;
+  }
+  .overview .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

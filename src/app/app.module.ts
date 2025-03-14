@@ -12,6 +12,12 @@ import { AmenitiesComponent } from './amenities/amenities.component';
 import { SurroundingsComponent } from './surroundings/surroundings.component';
 import { NeighbourhoodComponent } from './neighbourhood/neighbourhood.component';
 import { FooterComponent } from './footer/footer.component';
+import { EnquiryComponent } from './enquiry/enquiry.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import{HttpClientModule}from '@angular/common/http';
+import {AngularFireModule} from '@angular/fire/compat'
+import { firebaseConfig } from 'environments/environment';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database'
 
 @NgModule({
   declarations: [
@@ -25,10 +31,15 @@ import { FooterComponent } from './footer/footer.component';
     SurroundingsComponent,
     NeighbourhoodComponent,
     FooterComponent,
+    EnquiryComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,93 @@
 /* Navbar */
-.btn-enquire { background-color: #0EA57A; color: white; border: none; }
-.btn-enquire:hover { background-color: #087f5b; }
-.navbar { background-color: #3E517F; position: absolute; width: 100%; top: 0; left: 0; z-index: 1000; }
+.navbar {
+  background-color: #3E517F;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 20px; /* Ensures proper spacing */
+}
+
+/* Center Navbar Items */
+.navbar-nav {
+  text-align: center;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  margin-right: auto; /* Keeps brand on the left */
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust logo size */
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Right Side Button */
+.btn-enquire {
+  background-color: #0EA57A;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+/* Ensure Navbar Items Are Centered */
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* 🎯 Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack menu items on mobile */
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn-enquire {
+    margin-top: 10px;
+    width: auto;
+    font-size: 14px;
+  }
+}
+
+/* 🎯 Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .navbar-brand img {
+    height: 40px; /* Adjust logo size on small screens */
+  }
+
+  .nav-link {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .btn-enquire {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,86 @@
+/* Counter Section */
+.counter {
+  background-color: #1A2440;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.counter_numbers {
+  font-family: "Gabriela", serif;
+  color: #00E5A1;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 90.56px;
+}
+
+.counter_number_unit {
+  font-family: "Gabriela", serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21.22px;
+  color: #00E5A1;
+}
+
+.counter_number_text {
+  font-family: "Gabriela", serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 19.44px;
+  color: #fff;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .counter_numbers {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .counter_number_unit {
+    font-size: 14px;
+  }
+  .counter_number_text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .counter_numbers {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .counter_number_unit {
+    font-size: 13px;
+  }
+  .counter_number_text {
+    font-size: 10px;
+  }
+  .counter .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .counter .col-md-3 {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .counter_numbers {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .counter_number_unit {
+    font-size: 12px;
+  }
+  .counter_number_text {
+    font-size: 9px;
+  }
+  .counter .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

@@ -1,1 +1,36 @@
-<p>project-confuguration works!</p>
+<div class="configuration p-5">
+  <div class="container">
+      <p class="text-white p-3 configuration-text">Search Your Configuration</p>
+      <div class="filter-container">
+          <!-- Location Input -->
+          <div class="form-group position-relative">
+              <input type="text" class="form-control input-placeholder" id="location"
+                  placeholder="Enter city">
+              <i class="fas fa-map-marker-alt input-icon"></i>
+          </div>
+
+          <!-- Property Type Select -->
+          <div class="form-group position-relative">
+              <select class="form-select" id="property-type">
+                  <option value="1bhk">1 BHK</option>
+                  <option value="2bhk">2 BHK</option>
+                  <option value="3bhk">3 BHK</option>
+                  <option value="villa">Villa</option>
+              </select>
+              <i class="fas fa-home input-icon"></i>
+          </div>
+
+          <!-- Budget Input -->
+          <div class="form-group position-relative">
+              <input type="number" class="form-control input-placeholder" id="budget"
+                  placeholder="e.g., 90 Lacs">
+              <i class="fas fa-rupee-sign input-icon"></i>
+          </div>
+
+          <!-- Search Button -->
+          <button class="filter-btn">
+              <i class="fas fa-search"></i>
+          </button>
+      </div>
+  </div>
+</div>
